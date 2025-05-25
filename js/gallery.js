@@ -11,3 +11,14 @@ function upDate(previewPic){
     previewImage.style.backgroundImage = 'url()'
 	previewImage.innerHTML = 'Hover over an image below to display here.'	
 	}
+
+function setTabFocus() {
+    console.log("load")
+
+    let imgs = document.getElementsByTagName("img")
+    console.log(imgs)
+
+    for(let i = 0; i < imgs.length; i++) {
+        imgs[i].setAttribute("tabindex", "0")
+    }
+}
